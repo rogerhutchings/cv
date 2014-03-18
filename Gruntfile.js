@@ -14,7 +14,7 @@
             siteDir: '_site',
 
             compass: {
-                dist: {
+                compile: {
                     options: {
                         config: 'config.rb'
                     }
@@ -30,10 +30,10 @@
             watch: {
                 sass: {
                     files: ['_sass/**/*.sass'],
-                    tasks: ['build'],
+                    tasks: ['compass'],
                 },
                 jekyll: {
-                    files: ['_config.yml', '**/*.{html, md, yaml, yml}', '!_site/**/*.{html, md, yaml, yml}'],
+                    files: ['_config.yml', '**/*.{html, md, yaml, yml}', 'style.css', '!_site/**/*.{html, md, yaml, yml}'],
                     tasks: ['build']
                 }
             },
