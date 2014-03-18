@@ -1,4 +1,5 @@
-# Require any additional compass plugins here.
+# Add bower_components
+add_import_path "./bower_components/normalize.scss"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
@@ -8,12 +9,6 @@ images_dir = "images"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 
-# You can select your preferred output style here (can be overridden via the command line):
-# output_style = :expanded or :nested or :compact or :compressed
-
+output_style = :compact
 relative_assets = true
-
-# To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
-
 preferred_syntax = :sass
