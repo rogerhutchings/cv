@@ -21,20 +21,10 @@
                 }
             },
 
-            jekyll: {
-                build: {
-                    dest: '<%= siteDir %>'
-                }
-            },
-
-            watch: {
-                sass: {
-                    files: ['_sass/**/*.sass'],
-                    tasks: ['compass'],
-                },
-                jekyll: {
-                    files: ['_config.yml', '**/*.{html, md, yaml, yml}', 'style.css', '!_site/**/*.{html, md, yaml, yml}'],
-                    tasks: ['build']
+            concat: {
+                js: {
+                    src: ['bower_components/jquery/dist/jquery.min.js', '_js/*.js'],
+                    dest: 'app.js'
                 }
             },
 
@@ -47,20 +37,36 @@
                 }
             },
 
-            copy: {
-                css: {
-                    src: 'css',
-                    dest: '<%= siteDir %>/css'
+            jekyll: {
+                build: {
+                    dest: '<%= siteDir %>'
+                }
+            },
+
+            watch: {
+                sass: {
+                    files: ['_sass/**/*.sass'],
+                    tasks: ['compass'],
+                },
+                jekyll: {
+                    files: [
+                        '_config.yml',
+                        '**/*.{html, md, yaml, yml}',
+                        'style.css',
+                        'app.js',
+                        '!_site/**/*.{html, md, yaml, yml}'
+                    ],
+                    tasks: ['build']
                 }
             }
 
         });
 
         grunt.loadNpmTasks('grunt-contrib-compass');
-        grunt.loadNpmTasks('grunt-jekyll');
+        grunt.loadNpmTasks('grunt-contrib-concat');
         grunt.loadNpmTasks('grunt-contrib-connect');
         grunt.loadNpmTasks('grunt-contrib-watch');
-        grunt.loadNpmTasks('grunt-contrib-copy');
+        grunt.loadNpmTasks('grunt-jekyll');
 
         // Tasks ---------------------------------------------------------------
         grunt.registerTask(
@@ -72,7 +78,7 @@
         grunt.registerTask(
             'build',
             'Recompiles the sass, js, and rebuilds Jekyll',
-            ['compass', 'jekyll']
+            ['compass', 'concat', 'jekyll']
         );
 
         grunt.registerTask(
