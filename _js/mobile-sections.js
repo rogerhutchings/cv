@@ -12,8 +12,7 @@
             $('.js-section-content').hide();
 
             // When we click a section title, toggle a sibling with the content class
-            $('.js-section-title').click(function () {
-                console.log('toggling');
+            $('.js-section-title').on('click', function () {
                 $(this).siblings('.js-section-content').toggle();
             });
 
@@ -22,7 +21,7 @@
             // If we're on anything wider, show everything
             $('.js-section-content').show();
 
-            // ...and disable clicks, as per http://stackoverflow.com/questions/825112/how-to-remove-all-click-event-handlers-in-jquery
+            // ...and unbind the event listeners
             $('.js-section-title').off('click');
 
         }
