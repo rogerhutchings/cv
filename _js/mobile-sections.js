@@ -22,7 +22,11 @@
             // If we're on anything wider, show everything
             $('.js-section-content').show();
 
+            // ...and disable clicks, as per http://stackoverflow.com/questions/825112/how-to-remove-all-click-event-handlers-in-jquery
+            $('.js-section-title').off('click');
+
         }
-    });
+
+    }).resize();
 
 })();

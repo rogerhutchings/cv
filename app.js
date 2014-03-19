@@ -27,7 +27,11 @@ return d||(f=$b[b],$b[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,$b[b]=f),e}});v
             // If we're on anything wider, show everything
             $('.js-section-content').show();
 
+            // ...and disable clicks, as per http://stackoverflow.com/questions/825112/how-to-remove-all-click-event-handlers-in-jquery
+            $('.js-section-title').off('click');
+
         }
-    });
+
+    }).resize();
 
 })();
