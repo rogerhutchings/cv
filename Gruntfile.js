@@ -57,6 +57,10 @@
                         '!_site/**/*.{html, md, yaml, yml}'
                     ],
                     tasks: ['build']
+                },
+                js: {
+                    files: ['_js/*.js'],
+                    tasks: ['concat:js', 'build']
                 }
             }
 
