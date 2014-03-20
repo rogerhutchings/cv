@@ -5,7 +5,7 @@ title: Roger Hutchings - CV
 
     <body itemscope itemtype="http://schema.org/Person">
 
-        <header role="banner">
+        <header id="header" role="banner">
             <h1 id="site-title" itemprop="name">Roger Hutchings</h1>
             <nav id="site-navigation" role="navigation">
                 <a href="#personal-statement">Personal Statement</a>
@@ -26,62 +26,44 @@ title: Roger Hutchings - CV
             <section id="achievements">
                 <h2 class="section-title js-section-title">Achievements</h2>
                 <div class="section-content js-section-content">
-                    achivements
+                    achievements
                 </div>
             </section>
 
-            <section id="timeline">
-                <h2 class="section-title">Timeline</h2>
-                <div id="job-history">
-                    <h3 class="section-subtitle js-section-title">Employment</h3>
-                    <ol class="js-section-content">
-                        <li class="job">
-                            <h4 class="job-title">Campaign Web Editor</h4>
-                            <h4 class="job-organisation">University of Oxford, Development Office</h4>
-                            <div class="job-dates">March 2010&ndash;November 2012</div>
-                            <ul>
-                                <li>Defining strategies, creating text, photographic and video content for the Campaign, Giving, DARS and Intranet websites, in collaboration with University, College and Department stakeholders and external agencies.</li>
-                                <li>Maintaining and developing those sites in XHTML / CSS, and producing additional ad-hoc websites as required.</li>
-                                <li>Producing internal communications documents for use online and in print (DARS Bulletin, DevOff News, Development News Digest) using Adobe InDesign.</li>
-                            </ul>
-                        </li>
-                        <li class="job">
-                            <h4 class="job-title">Staff Writer</h4>
-                            <h4 class="job-organisation">The Mainichi Newspapers Co., Ltd.</h4>
-                            <div class="job-dates">March 2006&ndash;March 2010</div>
-                            <ul>
-                                <li>News gathering, writing, editing in Japanese and English, and photography.</li>
-                                <li>Development and maintenance of the Mainichi Daily News Web site and intranet resources, using an in-house CMS, XHTML, CSS, PHP and JavaScript.</li>
-                                <li>Translation of news articles in Japanese and English.</li>
-                            </ul>
-                        </li>
-                    </ol>
-                </div>
+            <section id="employment">
+                <h2 class="section-title js-section-title">Employment</h2>
+                <ol class="js-section-content">
+                {% for item in site.data.employment %}
+                    <li class="job">
+                        <h4 class="title">{{ item.title }}</h4>
+                        <h4 class="organisation">{{ item.organisation }}</h4>
+                        <h4 class="dates">{{ item.startDate }}&ndash;{{ item.endDate }}</h4>
+                        {% if item.description %}{{ item.description }}{% endif %}
+                    </li>
+                {% endfor %}
+                </ol>
+            </section>
 
-                <div id="education-history">
-                    <h3 class="section-subtitle js-section-title">Education</h3>
-                    <ol class="js-section-content">
-                        <li class="education">
-                            <h4 class="organisation">University of Liverpool</h4>
-                            <h4 class="course">MSc Information Technology with Merit</h4>
-                            <h4 class="dates">2008−2012</h4>
-                            <p>Fields of study included Databases, Web Applications, Security Engineering and Software Engineering. Dissertation assessed the use and efficacy of content management system software in use across the University of Oxford.</p>
-                        </li>
-                        <li class="education">
-                            <h4 class="organisation">University of Wales</h4>
-                            <h4 class="course">BSc Japanese and Business Studies, Upper Second Class (2:1) with Honours</h4>
-                            <h4 class="dates">2001−2005</h4>
-                        </li>
-                        <li class="education">
-                            <h4 class="organisation">Magdalen College School</h4>
-                            <h4 class="dates">1993−2001</h4>
-                            <p>4 A-Levels, 11 GCSEs</p>
-                        </li>
-                    </ol>
-                </div>
-
+            <section id="education-history">
+                <h2 class="section-title js-section-title">Education</h2>
+                <ol class="js-section-content">
+                {% for item in site.data.education %}
+                    <li class="education">
+                        <h4 class="organisation">{{ item.organisation }}</h4>
+                        <h4 class="course">{{ item.course }}</h4>
+                        <h4 class="dates">{{ item.startDate }}&ndash;{{ item.endDate }}</h4>
+                        {% if item.description %}{{ item.description }}{% endif %}
+                    </li>
+                {% endfor %}
+                </ol>
             </section>
 
         </main>
+
+        <footer id="footer" role="contentinfo">
+            &copy; Roger Hutchings, 2014.
+            Published under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.
+            <a href="{{ site.repo }}">View the code on GitHub</a>.
+        </footer>
 
     </body>

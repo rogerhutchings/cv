@@ -1,0 +1,25 @@
+#   Mandatory fields:
+#       - organisation
+#       - startDate
+#       - endDate
+#
+#   Optional fields:
+#       - course
+#       - description
+
+-
+    organisation: University of Liverpool
+    course: MSc Information Technology with Merit
+    startDate: 2008
+    endDate: 2012
+    description: "Fields of study included Databases, Web Applications, Security Engineering and Software Engineering. Dissertation assessed the use and efficacy of content management system software in use across the University of Oxford."
+-
+    organisation: University of Wales
+    course: "BSc Japanese and Business Studies, Upper Second Class (2:1) with Honours"
+    startDate: 2001
+    endDate: 2005
+-
+    organisation: Magdalen College School
+    startDate: 1993
+    endDate: 2001
+    description: "4 A-Levels, 11 GCSEs"

@@ -158,12 +158,15 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 /* line 635, bower_components/normalize.scss/_normalize.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 1, _sass/components/_body.sass */
-body { padding: 1rem; }
-
 /* line 3, _sass/components/_header.sass */
 header #site-title { text-align: center; }
 /* line 7, _sass/components/_header.sass */
 header #site-navigation { display: none; }
 @media (min-width: 568px) { /* line 7, _sass/components/_header.sass */
   header #site-navigation { display: block; } }
+
+/* line 1, _sass/components/_body.sass */
+body { padding: 1rem; }
+
+/* line 1, _sass/components/_footer.sass */
+#footer { text-align: center; }
