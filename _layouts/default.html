@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} - {{ site.name }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+
+    <body>
+
+        {% include _header.html %}
+
+        {% include _navigation.html %}
+
+        <article role="main">
+            {{ content }}
+        </article>
+
+        {% include _footer.html %}
+
+    </body>
+
+</html>

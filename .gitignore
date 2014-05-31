@@ -1,0 +1,8 @@
+node_modules/
+.sass-cache/
+_site
+.DS_Store
+
+# Compiled files
+app.js
+style.css
