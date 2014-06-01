@@ -69,16 +69,12 @@
                 },
                 jekyll: {
                     files: [
-                        '_config.yml',
                         '**/*.{html, md, yaml, yml}',
+                        '_config.yml',
                         'style.css',
                         '!<%= devDir %>/**/*',
                         '!<%= prodDir %>/**/*'
                     ],
-                    tasks: ['build:dev']
-                },
-                js: {
-                    files: ['Gruntfile.js'],
                     tasks: ['build:dev']
                 }
             }
@@ -112,7 +108,6 @@
             'deploy',
             'Rebuilds the site, and deploys to rogerhutchin.gs/cv',
             ['build:prod', 'ftp-deploy']
-            // ['build:prod']
         );
 
         grunt.registerTask(
