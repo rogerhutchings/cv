@@ -1,26 +1,27 @@
 {
-  "name": "jekyll-template",
+  "name": "cv",
   "version": "0.1.0",
-  "description": "A starting point for my Jekyll projects",
+  "description": "Roger Hutchings's online CV",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/rogerhutchings/jekyll-template.git"
+    "url": "git@github.com:rogerhutchings/cv.git"
   },
+  "private": true,
   "keywords": [
     "jekyll",
     "grunt",
     "template"
   ],
   "author": "Roger Hutchings",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rogerhutchings/jekyll-template/issues"
+    "url": "https://github.com/rogerhutchings/cv/issues"
   },
-  "homepage": "https://github.com/rogerhutchings/jekyll-template",
+  "homepage": "https://github.com/rogerhutchings/cv",
   "devDependencies": {
     "grunt": "^0.4.5",
     "time-grunt": "^0.3.1",
