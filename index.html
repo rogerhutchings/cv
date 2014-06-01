@@ -3,4 +3,36 @@ layout: default
 title: Main Page
 ---
 
-Main page
+<section id="employment">
+    <h2 class="section-title">Employment</h2>
+    <ol class="section-content">
+    {% for item in site.data.employment %}
+        <li class="job">
+            <h4 class="title">{{ item.title }}</h4>
+            <h4 class="organisation">{{ item.organisation }}</h4>
+            <h4 class="dates">{{ item.startDate }}&ndash;{{ item.endDate }}</h4>
+            {% if item.description %}{{ item.description }}{% endif %}
+        </li>
+    {% endfor %}
+    </ol>
+</section>
+
+<section id="freelance">
+    <h3 class="section-title">Freelance</h3>
+    <ol>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ol>
+</section>
+
+<section id="education">
+    <h3 class="section-title">Education</h3>
+    <ol>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ol>
+</section>
