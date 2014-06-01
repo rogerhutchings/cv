@@ -2,7 +2,6 @@
   "name": "cv",
   "version": "0.1.0",
   "description": "Roger Hutchings's online CV",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,8 +12,7 @@
   "private": true,
   "keywords": [
     "jekyll",
-    "grunt",
-    "template"
+    "grunt"
   ],
   "author": "Roger Hutchings",
   "license": "MIT",
@@ -29,6 +27,7 @@
     "grunt-jekyll": "^0.4.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-connect": "^0.7.1",
-    "grunt-contrib-concat": "^0.4.0"
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-ftp-deploy": "^0.1.3"
   }
 }

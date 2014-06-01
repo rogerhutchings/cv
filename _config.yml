@@ -1,4 +1,13 @@
-name: Your New Jekyll Site
+name: Roger Hutchings - CV
 markdown: redcarpet
 pygments: true
-exclude: [README.md, config.rb, node_modules]
+exclude:
+    - node_modules
+    - bower_components
+    - bower.json
+    - config.rb
+    - ftp.json
+    - Gruntfile.js
+    - package.json
+    - README.md
+baseurl: ''
