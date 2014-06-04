@@ -4,9 +4,27 @@
         weight: bold
     line-height: ms(2) * 1.2
     margin:
-        bottom: ms(0)
+        bottom: ms(2)
 
 ol
     li
         margin:
-            bottom: ms(0)
+            bottom: ms(4)
+
+
+a
+    display: inline-block
+    &:link,
+    &:visited
+        text-decoration: none
+        color: $black
+        background: #eaeaea
+        border-radius: 4px
+        padding: 4px
+
+    &:active,
+    &:hover
+        @include transition-property(color, background)
+        @include transition-duration(0.1s)
+        color: $white
+        background: $black

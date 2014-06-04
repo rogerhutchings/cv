@@ -8,9 +8,12 @@ title: Main Page
     <ol class="section-content">
     {% for item in site.data.employment %}
         <li class="job">
-            <h4 class="organisation">{{ item.organisation }}</h4>
-            <h4 class="title">{{ item.title }}</h4>
-            <h4 class="dates">{{ item.startDate }}&ndash;{{ item.endDate }}</h4>
+            <h3 class="organisation">
+                {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}
+                {{ item.organisation }}
+                {% if item.link %}</a>{% endif %}
+            </h3>
+            <h4 class="title-dates">{{ item.title }}, {{ item.startDate }}&ndash;{{ item.endDate }}</h4>
             {% if item.description %}{{ item.description }}{% endif %}
         </li>
     {% endfor %}
