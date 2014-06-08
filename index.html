@@ -7,14 +7,14 @@ title: Main Page
     <h2 class="section-title">Employment</h2>
     <ol class="section-content">
     {% for item in site.data.employment %}
-        <li class="job">
-            <h3 class="organisation">
-                {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}
-                {{ item.organisation }}
-                {% if item.link %}</a>{% endif %}
+        <li>
+            <h3 class="item-title">
+                <a href="{{ item.link }}" target="_blank">{{ item.organisation }}</a>
             </h3>
-            <h4 class="title-dates">{{ item.title }}, {{ item.startDate }}&ndash;{{ item.endDate }}</h4>
-            {% if item.description %}{{ item.description }}{% endif %}
+            <h4 class="item-subtitle">{{ item.title }}, {{ item.startDate }}&ndash;{{ item.endDate }}</h4>
+            {% for para in item.description %}
+                <p>{{ para }}</p>
+            {% endfor %}
         </li>
     {% endfor %}
     </ol>
@@ -24,10 +24,12 @@ title: Main Page
     <h2 class="section-title">Education</h2>
     <ol class="section-content">
     {% for item in site.data.education %}
-        <li class="institution">
-            <h4 class="organisation" itemprop="alumniOf">{{ item.organisation }}</h4>
+        <li>
+            <h3 class="item-title" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+                <a href="{{ item.link }}" target="_blank" itemprop="name">{{ item.organisation }}</a>
+            </h3>
+            <h4 class="item-subtitle">{{ item.course }} ({{ item.result }}), {{ item.startDate }}&ndash;{{ item.endDate }}</h4>
         </li>
     {% endfor %}
     </ol>
 </section>
-
