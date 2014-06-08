@@ -11,3 +11,4 @@ exclude:
     - package.json
     - README.md
 baseurl: ''
+environment: dev
