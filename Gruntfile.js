@@ -45,7 +45,7 @@
                 prod: {
                     options: {
                         dest: '<%= prodDir %>',
-                        config: '_config-production.yml,_config.yml'
+                        config: '_config.yml,_config-production.yml'
                     }
                 }
             },
@@ -69,7 +69,10 @@
                 },
                 jekyll: {
                     files: [
-                        '**/*.{html, md, yaml, yml}',
+                        '**/*.html',
+                        '**/*.yaml',
+                        '**/*.yml',
+                        '**/*.md',
                         '_config.yml',
                         'style.css',
                         '!<%= devDir %>/**/*',
