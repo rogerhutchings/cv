@@ -69,10 +69,7 @@
                 },
                 jekyll: {
                     files: [
-                        '**/*.html',
-                        '**/*.yaml',
-                        '**/*.yml',
-                        '**/*.md',
+                        '**/*.{html,yaml,yml,md}',
                         '_config.yml',
                         'style.css',
                         '!<%= devDir %>/**/*',
