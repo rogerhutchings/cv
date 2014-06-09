@@ -5,7 +5,8 @@
     startDate: November 2012
     endDate: Present
     description:
-        - At Incuna, I mainly build single-page sales aid apps for the pharmaceutical industry, using a custom Backbone library, Sass for styling and Grunt for development tasks.
+        - "At Incuna, I work primarily on iPad sales apps designed for the pharmaceutical industry. These apps are powered by Backbone, use Sass for styling, and Grunt for the development workflow. I've also used Yeoman to streamline the creation of new projects."
+        - "I've also used Angular to build apps for the web and mobile devices, D3 for data visualisation, and worked on templates and front end for some Django-driven patient community websites."
 -
     title: Campaign Web Editor
     link: http://www.campaign.ox.ac.uk/
@@ -13,7 +14,8 @@
     startDate: March 2010
     endDate: October 2012
     description:
-        - "Defining strategies, creating text, photographic and video content for the Campaign, Giving, DARS and Intranet websites, in collaboration with University, College and Department stakeholders and external agencies. Maintaining and developing those sites in XHTML / CSS, and producing additional ad-hoc websites as required. Producing internal communications documents for use online and in print (DARS Bulletin, DevOff News, Development News Digest) using Adobe InDesign."
+        - "I was responsible for the development, maintenance and contenf of multiple internal and external websites, all on different platforms. I also took on extra development opportunities where possible, and built several WordPress sites with custom themes."
+        - "I also gained some experience in print design while creating various internal communications documents, and shooting video content for the websites."
 -
     title: Staff Writer
     link: http://mainichi.jp/english/
@@ -21,4 +23,4 @@
     startDate: March 2006
     endDate: March 2010
     description:
-        - "News gathering, writing, editing in Japanese and English, and photography. Development and maintenance of the Mainichi Daily News Web site and intranet resources, using an in-house CMS, XHTML, CSS, PHP and JavaScript. Translation of news articles in Japanese and English."
+        - "My primary roles were news gathering, writing and editing in both Japanese and English, translation, and photography. I also worked on a Javascript-driven bilingual comic series, and built a custom article archive for the site using KohanaPHP and MySQL."

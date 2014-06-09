@@ -15,4 +15,11 @@
     .fa-github
         margin-top: ms(1)
         font-size: ms(3)
+        text-decoration: none
         @include text-shadow(#ccc 1px 1px 1px)
+        &:link,
+        &:visited
+            color: $black
+        &:active,
+        &:hover
+            color: $accent
