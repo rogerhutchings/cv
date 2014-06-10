@@ -28,6 +28,7 @@ title: Main Page
             <h3 class="item-title">
                 <a href="{{ item.link }}" target="_blank">{{ item.organisation }}</a>
             </h3>
+            <h4 class="item-subtitle">{{ item.startDate }}&ndash;{{ item.endDate }}</h4>
             {% for para in item.description %}
                 <p>{{ para }}</p>
             {% endfor %}

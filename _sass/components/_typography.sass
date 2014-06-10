@@ -2,7 +2,10 @@
 [role="contentinfo"]
 
     section
-        margin-bottom: ms(6)
+        @extend %ornament
+        &:after
+            margin: ms(3) 0
+
 
     .section-title
         margin-bottom: ms(2)
@@ -10,7 +13,7 @@
             size: ms(2)
             weight: bold
 
-    ol li
+    ol li:not(:last-of-type)
         margin-bottom: ms(2)
 
     a
@@ -40,3 +43,7 @@
     .item-subtitle
         margin-bottom: ms(0)
         font-style: italic
+
+    .ornament
+        &:after
+            @extend %vignette
