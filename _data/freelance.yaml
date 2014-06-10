@@ -1,10 +1,14 @@
 -
     organisation: Politics In Spires, University of Oxford
     link: http://politicsinspires.org/
+    startDate: September 2012
+    endDate: Present
     description:
-        - Edited by the Department of Politics and International Relations, I have run this site since 2012, including an overhaul based on a modified premium template. Aside from normal development and maintenance, I have recently migrated the site to a new Ubuntu server.
+        - Aside from development and maintenance of this blog for the Department of Politics and International Relations, I have given it an overhaul using WooThemes' Canvas theme, and migrated it to a new Ubuntu server.
 -
     organisation: Vincent's Club, University of Oxford
     link: http://vincents.org/
+    startDate: September 2012
+    endDate: July 2013
     description:
-        - The Vincent's Club of the University of Oxford commissioned me to produce a new site to allow them to connect with current and former members, after finding that the University's own systems were unsuitable. I created a responsive WordPress site based on an existing theme, and customised it further with a secure Members' Area, including a searchable register.
+        - The Vincent's Club of the University of Oxford commissioned me to produce a new site to allow them to connect with current and former members. I created a responsive WordPress site based a new premium theme, and customised it further with a secure Members' Area, including a searchable register.
