@@ -10,5 +10,6 @@ exclude:
     - Gruntfile.js
     - package.json
     - README.md
+    - CHANGELOG.md
 baseurl: ''
 environment: dev
