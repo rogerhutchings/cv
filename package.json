@@ -1,10 +1,7 @@
 {
   "name": "cv",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Roger Hutchings's online CV",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:rogerhutchings/cv.git"
@@ -15,7 +12,6 @@
     "grunt"
   ],
   "author": "Roger Hutchings",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rogerhutchings/cv/issues"
   },
@@ -27,7 +23,6 @@
     "grunt-jekyll": "^0.4.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-connect": "^0.7.1",
-    "grunt-contrib-concat": "^0.4.0",
     "grunt-ftp-deploy": "^0.1.3"
   }
 }
