@@ -33,6 +33,13 @@
                 }
             },
 
+            cssmin: {
+                prod: {
+                    src: '<%= prodDir %>/style.css',
+                    dest: '<%= prodDir %>/style.css'
+                }
+            },
+
             jekyll: {
                 options: {
 
@@ -87,6 +94,7 @@
         grunt.loadNpmTasks('grunt-contrib-watch');
         grunt.loadNpmTasks('grunt-ftp-deploy');
         grunt.loadNpmTasks('grunt-jekyll');
+        grunt.loadNpmTasks('grunt-contrib-cssmin');
 
         // Tasks ---------------------------------------------------------------
         grunt.registerTask(
@@ -107,7 +115,7 @@
         grunt.registerTask(
             'deploy',
             'Rebuilds the site, and deploys to rogerhutchin.gs/cv',
-            ['build:prod', 'ftp-deploy']
+            ['build:prod', 'cssmin', 'ftp-deploy']
         );
 
         grunt.registerTask(
