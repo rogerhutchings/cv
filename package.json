@@ -9,7 +9,8 @@
   "private": true,
   "keywords": [
     "jekyll",
-    "grunt"
+    "grunt",
+    "sass"
   ],
   "author": "Roger Hutchings",
   "bugs": {
