@@ -1,12 +1,2 @@
-node_modules/
-bower_components/
-.sass-cache/
-_site
-.DS_Store
-.ftppass
-
-# Compiled files
-app.js
-style.css
-_dev/
-_prod/
+build
+www

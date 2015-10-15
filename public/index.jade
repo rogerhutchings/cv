@@ -1,0 +1,50 @@
+doctype
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        meta(name="viewport" content="width=device-width")
+        link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cardo:400,400italic,700")
+        if environment == 'production'
+            link(rel="stylesheet" href="{{ asset 'main.css' }}")
+        else
+            link(rel="stylesheet" href="/main.css")
+        title Roger Hutchings - CV
+
+    body(itemscope itemtype="http://schema.org/Person")
+        header(role="banner" class="cv-title")
+            h1(itemprop="name") Roger Hutchings
+            h2(itemprop="jobTitle") Front-end Developer
+            a(class="github" href="https://github.com/rogerhutchings")
+                include _include-images/github.svg
+
+        section(class="cv-section")
+            h2(class="title") Employment
+            ol(class="content")
+                each job in public._data.employment
+                    != partial("_job", { job: job })
+
+        != partial("_flourish")
+
+        section(class="cv-section")
+            h2(class="title") Freelance
+            ol(class="content")
+                each job in public._data.freelance
+                    != partial("_job", { job: job })
+
+        != partial("_flourish")
+
+        section(class="cv-section")
+            h2(class="title") Education
+            ol(class="content")
+                each item in public._data.education
+                    li(class="item-detail")
+                        h3(class="title" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization")
+                            a(href="#{item.link}" target="_blank" itemprop="name") #{item.organisation}
+                        h4(class="item-subtitle") #{item.course} (#{item.result}), #{item.startDate}&ndash;#{item.endDate}
+
+        footer(class="cv-footer" role="contentinfo") &copy; 2014 Roger Hutchings.
+            a(href="https://github.com/rogerhutchings/cv" target="_blank") View the code on GitHub.
+
+        if environment == 'production'
+            script (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-3651721-3', 'rogerhutchin.gs');ga('send', 'pageview');

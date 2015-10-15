@@ -1,0 +1,92 @@
+{
+    "employment": [
+        {
+            "title": "Front End Developer",
+            "link": "https://www.zooniverse.org/",
+            "organisation": "Zooniverse, University of Oxford, UK",
+            "startDate": "October 2014",
+            "endDate": "Present",
+            "partial": "zooniverse"
+        },
+        {
+            "title": "Front End Developer",
+            "link": "http://www.incuna.com/",
+            "organisation": "Incuna Ltd, Oxford, UK",
+            "startDate": "November 2012",
+            "endDate": "September 2014",
+            "description": [
+                "At Incuna, I primarily built iPad apps using Backbone, Sass, and Grunt, and wrapping them in Cordova. I later streamlined this process by creating a custom Yeoman generator for new projects.",
+                "In addition, I built several responsive single page apps using Angular, and added D3 to produce dynamic data visualisations. I also worked on the front end for a number of Django websites."
+            ]
+        },
+        {
+            "title": "Campaign Web Editor",
+            "link": "http://www.campaign.ox.ac.uk/",
+            "organisation": "University of Oxford Development Office, Oxford, UK",
+            "startDate": "March 2010",
+            "endDate": "October 2012",
+            "description": [
+                "I developed, maintained and wrote content for several internal and external websites, all on different platforms. I also took on extra development opportunities where possible, building several WordPress sites with custom themes for special projects.",
+                "I also gained some experience in print design while creating various internal communications documents, and shooting video content for the websites."
+            ]
+        },
+        {
+            "title": "Staff Writer",
+            "link": "http://mainichi.jp/english/",
+            "organisation": "The Mainichi Newspapers Co., Tokyo, Japan",
+            "startDate": "March 2006",
+            "endDate": "March 2010",
+            "description": [
+                "My primary roles were news gathering, writing and editing in both Japanese and English, translation, and photography. I also worked on a Javascript-driven bilingual comic series, and built a custom article archive for the site using KohanaPHP and MySQL."
+            ]
+        }
+    ],
+    "freelance": [
+        {
+            "title": "Director",
+            "link": "https://www.peroshi.com/",
+            "organisation": "Peroshi Ltd, UK",
+            "startDate": "December 2014",
+            "endDate": "Present",
+            "description": [
+                "I set up a small company to work on bespoke freelance projects. Aside from primarily Django development, I also meet and communicate with clients, spec projects, and seek out new business."
+            ]
+        },
+        {
+            "organisation": "Politics in Spires, University of Oxford",
+            "link": "http://politicsinspires.org/",
+            "startDate": "September 2012",
+            "endDate": "Present",
+            "description": [
+                "I created a custom WordPress theme, migrated the blog from basic hosting to an Ubuntu server, and carried out ongoing development and maintenance."
+            ]
+        },
+        {
+            "organisation": "Vincent's Club, University of Oxford",
+            "link": "http://vincents.org/",
+            "startDate": "September 2012",
+            "endDate": "July 2013",
+            "description": [
+                "The Vincent's Club of the University of Oxford commissioned me to produce a new site to allow them to connect with current and former members. I created a responsive WordPress site based a new premium theme, and customised it further with a secure Members' Area, including a searchable register."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "organisation": "University of Liverpool",
+            "link": "http://www.liv.ac.uk/",
+            "course": "MSc Information Technology",
+            "result": "Merit",
+            "startDate": "2008",
+            "endDate": "2012"
+        },
+        {
+            "organisation": "University of Cardiff",
+            "link": "http://www.cf.ac.uk/",
+            "course": "BSc Japanese and Business Studies",
+            "result": "2:1 with Honours",
+            "startDate": "2001",
+            "endDate": "2005"
+        }
+    ]
+}

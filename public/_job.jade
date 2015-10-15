@@ -1,0 +1,16 @@
+li(class="item-detail")
+
+    h3(class="title")
+        a(href="#{job.link}" target="_blank") #{job.organisation}
+
+    h4(class="subtitle")
+        if job.title
+            span #{job.title},&nbsp;
+        span #{job.startDate}&ndash;#{job.endDate}
+
+    if job.partial
+        != partial('_partials/' + job.partial)
+
+    if job.description
+        each para in job.description
+            p #{para}

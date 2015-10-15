@@ -1,0 +1,7 @@
+{
+    "globals": {
+        "title": "My default title",
+        "description": "My default description",
+        "ga_tag": null
+    }
+}
