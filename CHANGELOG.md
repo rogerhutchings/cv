@@ -2,12 +2,19 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+
+### Changed
+
+* Fixed formatting error in Changelog
+* Add more info to Readme
+
 ## [2.0.0] - 20 October 2015
 
 ### Changed
 
 * Rebuild *all of the things* using `hb-rog` as a starting point
-# Reformat Changelog
+* Reformat Changelog
 
 ## [1.1.0]
 
