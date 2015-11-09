@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [Unreleased]
 
+### Added
+
+* Add content to Zooniverse job
+
 ### Changed
 
 * Fixed formatting error in Changelog
