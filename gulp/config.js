@@ -23,21 +23,6 @@ config.compile = {
     dest: buildDir
 };
 
-config.deploy = {
-    src: buildDir,
-    client: {
-        s3Options: {
-            accessKeyId: process.env.ROG_AMAZON_ACCESS_KEY_ID,
-            secretAccessKey: process.env.ROG_AMAZON_SECRET_ACCESS_KEY,
-            region: 'eu-west-1'
-        }
-    },
-    s3: {
-        Bucket: 'www.rogerhutchin.gs',
-        Prefix: ''
-    }
-};
-
 config.dev = {
     browserSync: {
         proxy: 'localhost:' + port
