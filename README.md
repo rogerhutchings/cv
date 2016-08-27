@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rogerhutchings/cv.svg?branch=master)](https://travis-ci.org/rogerhutchings/cv)
+
 # CV
 
 Hi! This is @rogerhutchings' CV.
