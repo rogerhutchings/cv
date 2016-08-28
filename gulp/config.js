@@ -28,7 +28,7 @@ config.dev = {
         proxy: 'localhost:' + port
     },
     harp: {
-        src: publicDir,
+        src: rootDir,
         options: {
             port: port
         }

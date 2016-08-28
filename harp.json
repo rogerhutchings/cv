@@ -1,7 +1,7 @@
 {
-    "globals": {
-        "title": "My default title",
-        "description": "My default description",
-        "ga_tag": null
-    }
+  "globals": {
+    "title": "Roger Hutchings - CV",
+    "description": "Roger Hutchings is a front-end web developer based in Birmingham, UK.",
+    "ga_tag": "UA-3651721-3"
+  }
 }
