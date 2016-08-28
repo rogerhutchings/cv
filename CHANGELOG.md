@@ -7,11 +7,16 @@ All notable changes to this project will be documented in this file. This projec
 ### Added
 
 * Add content to Zooniverse job
+* Add Travis for automated deployment to S3
 
 ### Changed
 
 * Fixed formatting error in Changelog
 * Add more info to Readme
+
+### Removed
+
+* Gulp deploy task and config
 
 ## [2.0.0] - 20 October 2015
 
