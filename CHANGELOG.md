@@ -13,6 +13,8 @@ All notable changes to this project will be documented in this file. This projec
 
 * Fixed formatting error in Changelog
 * Add more info to Readme
+* Fixed insecure font URL
+* Fixed bug in Gulp dev config where the path was incorrectly set for Harp in framework style
 
 ### Removed
 
