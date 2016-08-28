@@ -4,9 +4,16 @@ li(class="item-detail")
         a(href="#{job.link}" target="_blank") #{job.organisation}
 
     h4(class="subtitle")
-        if job.title
-            span #{job.title},&nbsp;
-        span #{job.startDate}&ndash;#{job.endDate}
+        if job.positions
+            each position in job.positions
+                span #{position.title},&nbsp;
+                span #{position.startDate}&ndash;#{position.endDate}
+                br
+
+        else
+            if job.title
+                span #{job.title},&nbsp;
+            span #{job.startDate}&ndash;#{job.endDate}
 
     if job.partial
         != partial('_partials/' + job.partial)

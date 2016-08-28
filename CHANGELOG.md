@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file. This projec
 ### Added
 
 * Add content to Zooniverse job
+* Add content to Incuna job
 * Add Travis for automated deployment to S3
 
 ### Changed
@@ -15,6 +16,7 @@ All notable changes to this project will be documented in this file. This projec
 * Add more info to Readme
 * Fixed insecure font URL
 * Fixed bug in Gulp dev config where the path was incorrectly set for Harp in framework style
+* Change job schema to allow for multiple positions at the same employer
 
 ### Removed
 
